@@ -1,0 +1,13 @@
+# Optional heavy guardrail dependency.
+#
+# LLM Guard is used as the `llm_guard` defense (a real, industrial prompt-
+# injection scanner). It is kept out of requirements.txt because it pulls in
+# torch/transformers, which are large. Install only when you want to evaluate
+# that defense:
+#
+#     pip install -r requirements-guard.txt
+#
+# The harness gracefully skips the `llm_guard` defense when this is not
+# installed, so the core matrix still runs without it.
+
+llm-guard>=0.3

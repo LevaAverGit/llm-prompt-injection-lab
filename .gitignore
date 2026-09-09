@@ -1,0 +1,22 @@
+# Virtualenvs
+.venv/
+.venv-verify/
+venv/
+env/
+
+# Python bytecode / caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Environment / secrets
+.env
+
+# Planning notes (kept local, not published)
+PLAN.md
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/

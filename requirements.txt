@@ -1,0 +1,10 @@
+# Core dependencies for the prompt-injection resilience lab.
+# Local, key-free, reproducible: the model runs via Ollama (gemma3:latest).
+
+langgraph>=0.2
+langchain-ollama>=0.2
+pydantic>=2
+pyyaml>=6
+pandas>=2
+pytest>=8
+rich>=13
