@@ -9,6 +9,8 @@
 > assistant, used only to score a defense and turn regressions into failing
 > tests. Please read and use it in that spirit.
 
+*Why it matters: prompt injection is the #1 risk in the OWASP Top-10 for LLM apps; this harness turns "we added a guardrail" into a breach-rate number a security review can act on.*
+
 The lab is built around an **attacker → app → judge** loop: the attacker selects
 an illustrative injection probe, the app answers under a chosen defense, and an
 LLM-as-judge returns a structured `Verdict`. The loop is expressed as a stateful
