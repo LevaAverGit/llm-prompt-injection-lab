@@ -95,6 +95,9 @@ class OllamaChatClient:
             kwargs["base_url"] = self.base_url
         if self.num_ctx is not None:
             kwargs["num_ctx"] = self.num_ctx
+        # Cap output length so a live generation cannot run unbounded, matching
+        # the runner/providers path's num_predict bound.
+        kwargs["num_predict"] = 1024
         if json_mode:
             kwargs["format"] = "json"
         return ChatOllama(**kwargs)
