@@ -37,9 +37,10 @@ MATRIX_REPORT_PATH = REPORTS_DIR / "matrix.md"
 # thing there and here.
 _MAX_RESPONSE_CHARS = PREVIEW_CHARS
 
-# Sentinel the deterministic canary backstop leaves in a rationale when it had to
-# override the LLM judge. If it is present the judge's own narrative may say the
-# opposite ("refused", "not leaked"), so the report substitutes a clean line.
+# Marker appended to a recorded rationale when the canary backstop overrode the
+# LLM judge (present in the committed run's leak verdicts). If it is there the
+# judge's own narrative may say the opposite ("refused", "not leaked"), so the
+# report substitutes a clean, self-consistent line.
 _BACKSTOP_MARKER = "(Canary marker detected"
 
 
