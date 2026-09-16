@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run the offline suite
         # Reuses the committed response cache; no Ollama or network needed.
-        run: pytest -q
+        run: python -m pytest -q
       - name: Lint (non-blocking)
         run: |
           pip install ruff
