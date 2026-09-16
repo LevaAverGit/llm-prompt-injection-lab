@@ -20,3 +20,7 @@ PLAN.md
 .DS_Store
 .idea/
 .vscode/
+
+# The global core.excludesFile ignores prompts/ (Lev's local AI-prompt files);
+# here prompts/ is a source package, so keep it tracked in this repo.
+!prompts/
