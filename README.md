@@ -1,5 +1,10 @@
 # llm-prompt-injection-lab
 
+[![CI](https://github.com/LevaAverGit/llm-prompt-injection-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/LevaAverGit/llm-prompt-injection-lab/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C)
+
 > **Defensive, educational scope.** This is a self-contained lab that tests the
 > resilience of its **own isolated toy assistant** to prompt injection. It exists
 > to **measure and harden the lab's own defensive contour** — nothing more. There
